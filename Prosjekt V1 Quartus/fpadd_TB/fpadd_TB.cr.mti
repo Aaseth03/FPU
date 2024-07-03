@@ -1,0 +1,48 @@
+{D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/Z_COUNTER.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/Z_COUNTER.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Z_COUNTER
+-- Compiling architecture Struct of Z_COUNTER
+
+} {} {}} {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/addmant.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/addmant.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity addmant
+-- Compiling architecture synth of addmant
+
+} {} {}} {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/shiftmant.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/shiftmant.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shiftmant
+-- Compiling architecture synth of shiftmant
+
+} {} {}} {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/fpadd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/fpadd.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fpadd
+-- Compiling architecture synth of fpadd
+
+} {} {}} {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/expcomp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/expcomp.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity expcomp
+-- Compiling architecture synth of expcomp
+
+} {} {}}

@@ -1,0 +1,21 @@
+{D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/Z_COUNTER.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/Z_COUNTER.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Z_COUNTER
+-- Compiling architecture Struct of Z_COUNTER
+
+} {} {}} {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/Div_expsub/div_expsub_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Datasystemdesign/Porsjekt/Prosjekt V1 Quartus/Div_expsub/div_expsub_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity div_expsub_TB
+-- Compiling architecture synth of div_expsub_TB
+
+} {} {}}

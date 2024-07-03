@@ -1,0 +1,37 @@
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+USE ieee.STD_LOGIC_UNSIGNED.all;
+USE ieee.NUMERIC_STD.all;
+-- Counts to k-1 in an signal n-bit long
+ENTITY Z_Counter IS
+	GENERIC(	n	:	NATURAL);
+	PORT(CLK		:	IN	STD_LOGIC;
+		  Enable	:	IN	STD_LOGIC;
+		  RST		:	IN	STD_LOGIC;
+		  X		:	IN	STD_LOGIC_VECTOR(n-1 DOWNTO 0)
+		  Zeroes	:	OUT NATURAL;
+		  );
+END NbitCounter;
+
+ARCHITECTURE Behav OF Z_COUNTER IS
+	SIGNAL	k, Num_z	:	NATURAL := 0;
+BEGIN
+	k <= n-1 ;
+	PROCESS(Enable,CLK,RST,V,X)
+	BEGIN
+		IF(RST = '1') THEN
+			Num_z <= 0;
+		ELSIF ((X(k) = '0') AND RISING_EDGE(CLK) AND (ENABLE = '1')) THEN
+			IF (k > 0) THEN
+				Num_z <= Num_z + 1;
+				k <= k-1;
+			END IF;
+		END IF;
+	END PROCESS;
+	
+	Q <= V;
+END Behav;
+
+
+
+	

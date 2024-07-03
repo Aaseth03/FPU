@@ -1,0 +1,35 @@
+library IEEE; 
+use IEEE.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
+--use IEEE.std_logic_unsigned.all;
+
+ENTITY AddSub IS 
+PORT(	CLK				:	IN STD_LOGIC;
+		Tall_a, Tall_b	:	IN	unsigned(31 DOWNTO 0);
+		Tall_s			:	OUT unsigned(31 DOWNTO 0));
+END;
+
+ARCHITECTURE Bruh of ADDSub IS
+SIGNAL
+BEGIN
+
+sign_a <= Tall_a(31);
+sign_b <= Tall_b(31);
+
+exp_a <= Tall_a(30 DOWNTO 23);
+exp_b <= Tall_b(30 DOWNTO 23);
+
+mant_a <= Tall_a(22 DOWNTO 0);
+mant_b <= Tall_b(22 DOWNTO 0);
+
+
+PROCESS()
+BEGIN
+
+
+
+
+END PROCESS;
+
+
+END Bruh;

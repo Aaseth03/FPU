@@ -1,0 +1,29 @@
+library IEEE; use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+use IEEE.STD_LOGIC_ARITH.all;
+--Legger sammen tallene etter bitshift
+entity addmant is
+ port(alessb: in STD_LOGIC;
+ 	manta: in STD_LOGIC_VECTOR(23 downto 0);
+ 	mantb: in STD_LOGIC_VECTOR(23 downto 0);
+ 	shmant: in STD_LOGIC_VECTOR(23 downto 0);
+ 	exp_pre: in STD_LOGIC_VECTOR(7 downto 0);
+ 	fract: out STD_LOGIC_VECTOR(22 downto 0);
+ 	exp: out STD_LOGIC_VECTOR(7 downto 0));
+end;
+
+architecture synth of addmant is
+ signal addresult: STD_LOGIC_VECTOR(24 downto 0);
+ signal addval: STD_LOGIC_VECTOR(23 downto 0);
+begin
+
+ addval <= mantb when alessb = '1' else manta;
+ addresult <= ('0'&shmant) + addval;
+ fract <= addresult(23 downto 1) 
+ when addresult(24) = '1'
+ else addresult(22 downto 0);
+ exp <= (exp_pre + 1) 
+ when addresult(24) = '1'
+ else exp_pre;
+
+end;
